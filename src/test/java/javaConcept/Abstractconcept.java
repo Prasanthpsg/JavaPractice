@@ -6,7 +6,7 @@ package javaConcept;
 /**
  * 
  */
-public abstract class Abstractconcept {
+public abstract class Abstractconcept { // can have constructor
 	
 	void abmessage() {
 		System.out.println("with method implementation");
