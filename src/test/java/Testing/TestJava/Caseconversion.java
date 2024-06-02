@@ -5,6 +5,8 @@ public class Caseconversion {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		// asked in infosys 2nd round
+		
 		String strinput = "pRaSaNtH";
 		
 		char[] c = strinput.toCharArray();

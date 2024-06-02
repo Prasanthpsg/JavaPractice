@@ -13,7 +13,7 @@ public class Occurreneceofelements {
 		
 		String s = "PrasanthP";
 		
-		char[] c = s.toCharArray();
+		char[] c = s.toCharArray(); //infosys 1st round
 		
 		HashMap<Character, Integer> h = new LinkedHashMap<Character, Integer>();
 		

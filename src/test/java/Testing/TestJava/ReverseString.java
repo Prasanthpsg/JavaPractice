@@ -5,7 +5,7 @@ public class ReverseString {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String strinput = "Testing"; String strrev ="";
+		String strinput = "Testing"; String strrev =""; String strreverse ="";
 		
 		// convert String to character array
         // by using toCharArray
@@ -16,6 +16,13 @@ public class ReverseString {
 		}
 		
 		System.out.println(strrev);
+		
+		// charAt
+		for (int z=strinput.length()-1;z>=0;z--) {
+			 strreverse = strreverse+strinput.charAt(z);
+		}
+		
+		System.out.println(strreverse);
 		
 		
 		//string builder method
