@@ -1,18 +1,19 @@
 package Testing.TestJava;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class Secondmostfrequentchar {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String s = "geeksforgeekks";
+		String s = "prjasanthvijaya"; 
+		int lastposvalue=0;
 		
 		char[] c = s.toCharArray();
 		
@@ -27,25 +28,54 @@ public class Secondmostfrequentchar {
 			}
 		}
 		
+		
 		//before sorting
 		System.out.println("Before sorting - map: "+hmap);
 		
-		//Set<Character> cset = hmap.keySet();
+		Collection<Integer> c0 = hmap.values(); // return all the values from the hash map
 		
-		//System.out.println(hmap.entrySet());
+		// Creating an ArrayList of values 
+        ArrayList<Integer> listOfValues 
+            = new ArrayList<>(c0);
+        
+        Collections.sort(listOfValues); // ascending order
+       // System.out.println(listOfValues);
+        
+        lastposvalue = listOfValues.get(listOfValues.size()-1);
+       // System.out.println(lastposvalue);
+        int temp =0;
+        
+		for (int i = 0; i < listOfValues.size(); i++) {
+			
+			if(listOfValues.get(i)<lastposvalue) {
+				temp= listOfValues.get(i);
+			}
+		}
+		
+		System.out.println("Second most frequent character value in the list: " +temp);
+		
+		// entry set loop
+		for(Map.Entry<Character, Integer> cg : hmap.entrySet() ) {
+			
+			if(cg.getValue()==temp) {
+				System.out.println("Second most frequent character key in the list: " + cg.getKey() + " value: "+ cg.getValue());
+			}
+		}
 		
 		List<Map.Entry<Character, Integer> > m = new ArrayList<Map.Entry<Character,Integer>>(hmap.entrySet());
-		Collections.sort(m, (a, b) -> b.getValue().compareTo(a.getValue())); //// Sort the frequencies in descending order
+		//Collections.sort(m, (a, b) -> b.getValue().compareTo(a.getValue())); //// Sort the frequencies in descending order
 		
 		
 		//After sorting
-		System.out.println("After sorting - List: "+m);
+		//System.out.println("After sorting - List: "+m);
 		
 		//Second most frequent char
-		System.out.println(m.get(1).getKey());
+		//System.out.println(m.get(1).getKey());
 		
 		
 		//Collections.sort(cset);
+		
+		//m.stream().filter(e -> e.getValue().equals(m))
 
 	}
 
