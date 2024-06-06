@@ -2,17 +2,30 @@ package javaConcept;
 
 public class Abstracttest extends Abstractconcept{
 
+
+
+	Abstracttest(int m) {
+		super(m);
+		// TODO Auto-generated constructor stub
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		new Abstracttest().abmessage();
-		new Abstracttest().abmessage2();
+		new Abstracttest(10).abmessage();
+		new Abstracttest(7).abmessage2();
+		Abstracttest.mess();
 
 	}
 
 	@Override
-	void abmessage2() {
+	public void abmessage2() {
 		System.out.println("implementation in the child class");
+	}
+	
+	@Override
+	public void abmessage() {
+		System.out.println("in the child class - abmessage implementation");
 	}
 
 }

@@ -20,9 +20,9 @@ public class Removecompleteduplcatevalues {
 		for (int i = 0; i < strarr.length; i++) {
 			b = false;
 			
-			//if(!strlist.contains(strarr[i])) { // condition to check the input is already present in the duplicate list
+			if(!strlist.contains(strarr[i])) { // condition to check the input is already present in the duplicate list
 			
-			strlist.stream().forEach(n -> n.equals(strarr));{
+		//	strlist.stream().forEach(n -> n.equals(strarr));{
 			for (int j = i+1; j < strarr.length; j++) {
 		
 			if(strarr[i].equals(strarr[j])) {

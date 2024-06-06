@@ -8,5 +8,10 @@ public interface Java8interface {
 		
 		System.out.println("java 8 interface");
 	}
+	
+	static void show1() {
+		
+		System.out.println("java 8 interface");
+	}
 
 }
