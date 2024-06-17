@@ -10,9 +10,14 @@ public class Extractonlynumbers {
 		for (int i = 0; i < input.length(); i++) {
 			
 			if(Character.isDigit(input.charAt(i))) {
-				System.out.println(input.charAt(i));
+				System.out.print(input.charAt(i));
 			}
 		}
+		
+		System.out.println();
+		
+		String onlydigits = input.replaceAll("[^0-9]", ""); // o/p: 14122
+		System.out.println(onlydigits);
 
 	}
 
