@@ -15,6 +15,15 @@ public class Swap {
 		
 		System.out.println(i);
 		System.out.println(j);
+		
+		int k=17, m=19;
+		
+		k =k+m;
+		m =k-m;
+		k = k-m;
+		
+		System.out.println(k);
+		System.out.println(m);
 
 	}
 
