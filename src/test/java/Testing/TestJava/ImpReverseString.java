@@ -38,6 +38,14 @@ public class ImpReverseString {
 		
 		StringBuffer sb = new StringBuffer(strinput);
 		System.out.println(sb.reverse());
+		
+		//Remove space form given string
+		
+		//Scanner sc = new Scanner(System.in);
+		//String input = sc.nextLine();
+		
+		String inn = "hello java Learning ";
+		System.out.println(inn.replaceAll("\\s", ""));
 	}
 
 }

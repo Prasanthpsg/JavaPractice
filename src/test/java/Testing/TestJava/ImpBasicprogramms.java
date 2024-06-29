@@ -44,7 +44,21 @@ public class ImpBasicprogramms {
 			}
 		}
 		
+		//Reverse each word in a sentence
+		String str = "reverse each word in a string";
+		StringBuffer sbf = new StringBuffer();
+		String[] strarray = str.split("\\s");
 		
+		for(int z =0;z<strarray.length;z++) {
+			
+			for(int m =strarray[z].length()-1;m>=0;m--) {
+				
+				sbf =sbf.append(strarray[z].charAt(m));
+			}
+			sbf =sbf.append(" ");
+		}
+		
+		System.out.println(sbf.toString().trim()); //esrever hcae drow ni a gnirts
 		
 	}
 

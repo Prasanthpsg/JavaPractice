@@ -32,51 +32,47 @@ public class ImpSecondmostfrequentchar {
 		//before sorting
 		System.out.println("Before sorting - map: "+hmap);
 		
-		Collection<Integer> c0 = hmap.values(); // return all the values from the hash map
+		//Collection<Integer> c0 = hmap.values(); // return all the values from the hash map
 		
 		// Creating an ArrayList of values 
-        ArrayList<Integer> listOfValues 
-            = new ArrayList<>(c0);
+       // ArrayList<Integer> listOfValues 
+          //  = new ArrayList<>(c0);
         
-        Collections.sort(listOfValues); // ascending order
+       // Collections.sort(listOfValues); // ascending order
        // System.out.println(listOfValues);
         
-        lastposvalue = listOfValues.get(listOfValues.size()-1);
+    //    lastposvalue = listOfValues.get(listOfValues.size()-1);
        // System.out.println(lastposvalue);
         int temp =0;
         
-		for (int i = 0; i < listOfValues.size(); i++) {
-			
-			if(listOfValues.get(i)<lastposvalue) {
-				temp= listOfValues.get(i);
-			}
-		}
-		
-		System.out.println("Second most frequent character value in the list: " +temp);
+//		for (int i = 0; i < listOfValues.size(); i++) {
+//			
+//			if(listOfValues.get(i)<lastposvalue) {
+//				temp= listOfValues.get(i);
+//			}
+//		}
+//		
+//		System.out.println("Second most frequent character value in the list: " +temp);
 		
 		// entry set loop
-		for(Map.Entry<Character, Integer> cg : hmap.entrySet() ) {
-			
-			if(cg.getValue()==temp) {
-				System.out.println("Second most frequent character key in the list: " + cg.getKey() + " value: "+ cg.getValue());
-			}
-		}
+//		for(Map.Entry<Character, Integer> cg : hmap.entrySet() ) {
+//			
+//			if(cg.getValue()==temp) {
+//				System.out.println("Second most frequent character key in the list: " + cg.getKey() + " value: "+ cg.getValue());
+//			}
+//		}
 		
 		List<Map.Entry<Character, Integer> > m = new ArrayList<Map.Entry<Character,Integer>>(hmap.entrySet());
-		//Collections.sort(m, (a, b) -> b.getValue().compareTo(a.getValue())); //// Sort the frequencies in descending order
+		Collections.sort(m, (a, b) -> b.getValue().compareTo(a.getValue())); //// Sort the entry sets in descending order
 		
 		
 		//After sorting
-		//System.out.println("After sorting - List: "+m);
+		System.out.println("After sorting - map: "+m);
 		
 		//Second most frequent char
-		//System.out.println(m.get(1).getKey());
+		System.out.println(m.get(1).getKey());
 		
 		
-		//Collections.sort(cset);
-		
-		//m.stream().filter(e -> e.getValue().equals(m))
-
 	}
 
 }
