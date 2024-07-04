@@ -25,7 +25,7 @@ public class ImpReverseString {
 		System.out.println(strreverse);
 		
 		
-		//string builder method
+		//string builder method java 5 non sync and not thread safe, efficient
 		
 		StringBuilder s = new StringBuilder();
 		

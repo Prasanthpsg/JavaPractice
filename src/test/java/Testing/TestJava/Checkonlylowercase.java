@@ -10,7 +10,7 @@ public class Checkonlylowercase {
 		char[] c = str.toCharArray(); boolean b = false;
 		
 		
-		for(int i=0;i<c.length;i++) { // A to Z 65 - 91 // a to z 97 - 112
+		for(int i=0;i<c.length;i++) { // A to Z 65 - 91 // a to z 97 - 122
 			
 			if(c[i] >=97 && c[i]<=122) {  //(c[i] >='a' && c[i]<='z')
 				b = true;

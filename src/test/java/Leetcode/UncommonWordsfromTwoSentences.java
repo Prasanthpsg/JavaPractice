@@ -34,7 +34,7 @@ public class UncommonWordsfromTwoSentences {
 				m.put(str, 1);
 				nonrep = true;
 			}
-		}
+		}//no use
 		
 		//System.out.println(m);
 		

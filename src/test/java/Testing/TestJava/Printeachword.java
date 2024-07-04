@@ -1,6 +1,8 @@
 package Testing.TestJava;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Printeachword {
 
@@ -10,11 +12,12 @@ public class Printeachword {
 		String str = "This is my framework";
 		
 		String[] a = str.split(" ");
-		ArrayList<String> Al = new ArrayList<String>();
+		//ArrayList<String> Al = new ArrayList<String>(Arrays.asList(a));
+		ArrayList<String> Al = new ArrayList<String>(List.of(a));
 		
-		for (String string : a) {
-			Al.add(string);
-		}
+//		for (String string : a) {
+//			Al.add(string);
+//		}
 		
 		System.out.println(Al);
 		

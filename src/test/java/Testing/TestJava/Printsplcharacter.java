@@ -7,14 +7,16 @@ public class Printsplcharacter {
 		
 		String input = "c=**sd1212^tr%";
 		
-		char[] c3= input.toCharArray();
+//		char[] c3= input.toCharArray();
+//		
+//		
+//		for (int i = 0; i < c3.length; i++) {
+//			if(!Character.isLetterOrDigit(c3[i])) {
+//				System.out.print(c3[i]);
+//			}
+//		}
 		
-		
-		for (int i = 0; i < c3.length; i++) {
-			if(!Character.isLetterOrDigit(c3[i])) {
-				System.out.print(c3[i]);
-			}
-		}
+		System.out.println(input.replaceAll("[0-9a-zA-Z]", "")); //=**^%
 	}
 
 }

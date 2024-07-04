@@ -9,7 +9,7 @@ public class StringTest {
 		String s1="Hello";
 		String s2= "world"; //string literal - will be available in string constant pool
 		String s3 = s1+s2;
-		s3.intern();
+		s3.intern();//scp
 		String s4="Helloworld";
 		System.out.println(s3==s4); //true
 		System.out.println(s3.equals(s4)); //true

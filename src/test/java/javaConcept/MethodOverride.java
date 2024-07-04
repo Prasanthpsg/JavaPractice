@@ -27,6 +27,9 @@ public class MethodOverride extends Accessmodifier{ // Run time polymorphism
 		
 		Accessmodifier a = new MethodOverride(); // Up casting approach - parent class is referring the child class 
 		a.eat(); //print child class value
+		
+		MethodOverride mo1 = (MethodOverride) new Accessmodifier();
+		mo1.eat();
 	}
 
 }

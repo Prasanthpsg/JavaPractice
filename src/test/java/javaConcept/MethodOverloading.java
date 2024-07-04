@@ -10,6 +10,10 @@ public class MethodOverloading { // compile time polymorphism
 		System.out.println("In method with arguments "+i);
 	}
 	
+	public void VerifyDSM(int i, String s) {
+		System.out.println("In method with arguments "+i +s);
+	}
+	
 	public static void main(String[] args) {
 		
 		MethodOverloading m = new MethodOverloading();

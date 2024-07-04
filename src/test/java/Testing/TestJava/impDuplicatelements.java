@@ -19,9 +19,9 @@ public class impDuplicatelements {
 			}
 		}
 		
-		IntStream s = Arrays.stream(a);
-		s.distinct();
-		System.out.println(s.toString());
+//		IntStream s = Arrays.stream(a);
+//		s.distinct();
+//		System.out.println(s.toString());
 
 	}
 

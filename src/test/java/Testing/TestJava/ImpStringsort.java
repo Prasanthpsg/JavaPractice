@@ -25,7 +25,7 @@ public class ImpStringsort {
 		//Arrays.sort(c);
 		
 		//System.out.println(c);
-		char temp;
+		char temp=0;
 		
 		for(int i=0;i<c.length;i++) {
 			for(int j=i+1;j<c.length;j++) {

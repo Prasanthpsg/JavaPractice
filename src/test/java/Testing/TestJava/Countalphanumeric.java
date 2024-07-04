@@ -9,7 +9,7 @@ public class Countalphanumeric {
 		
 		int alpha = 0, num =0, spl =0;
 		
-		char[] c2 = input.toCharArray(); // A to Z 65 - 91 // a to z 97 - 112
+		char[] c2 = input.toCharArray(); // A to Z 65 - 91 // a to z 97 - 122
 		
 		for (int i = 0; i < c2.length; i++) {
 			
