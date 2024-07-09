@@ -16,15 +16,14 @@ public class commonprefixstring {
 			
 			Set<String> set = new HashSet<String>();
 			for(int i=0;i<strs.length;i++) {
-			if(strs[i].length()>counter) {
+			//if(strs[i].length()>counter) {
 				set.add(String.valueOf(strs[i].charAt(counter)));
 				b =true;
-			}else {
-				b = false;
-				break;
-			}
+//			}else {
+//				b = false;
+//				break;
+//			}
 			
-		//	System.out.println(set.toString());
 			}
 			
 			if(b) {

@@ -7,6 +7,7 @@ public interface Interfaceconcept { // implemented by OOPStest class please refe
 //	}
 //	
 	public static final int i = 12; // always static final
+	int j =13; // always static final
 	
 	//naturally public and abstract
 	void imessage(); //no need to mention public access modifier

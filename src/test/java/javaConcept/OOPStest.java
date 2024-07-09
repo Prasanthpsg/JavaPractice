@@ -16,6 +16,7 @@ public class OOPStest implements Interfaceconcept {
 		//ic.imessage3();
 		
 		System.out.println(Interfaceconcept.i);
+	//	j=24; //The final field Interfaceconcept.j cannot be assigned
 
 	}
 

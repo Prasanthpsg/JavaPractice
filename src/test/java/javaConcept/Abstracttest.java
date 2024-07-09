@@ -15,6 +15,7 @@ public class Abstracttest extends Abstractconcept{
 		new Abstracttest(10).abmessage();
 		new Abstracttest(7).abmessage2();
 		Abstracttest.mess();
+	//	z=10; not possible because z is declared as a final variable
 
 	}
 

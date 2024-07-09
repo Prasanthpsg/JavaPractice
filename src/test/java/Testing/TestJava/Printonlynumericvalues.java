@@ -28,6 +28,18 @@ public class Printonlynumericvalues {
 		String theDigits = CharMatcher.inRange('0', '9').retainFrom(str);  // o/p: 122
 		
 		System.out.println(theDigits);
+		
+		String str1 = "Test122";
+		
+		int v = Integer.parseInt(str1.replaceAll("[^0-9]", ""));//122
+		int sum=0;
+		
+		while(v>0) {
+			 sum = sum+v%10;
+			 v =v/10;
+		}
+		
+		System.out.println(sum); //5
 	}
 
 }

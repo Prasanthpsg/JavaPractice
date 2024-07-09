@@ -6,7 +6,7 @@ package javaConcept;
 /**
  * 
  */
-public abstract class Abstractconcept { // extended by Abstractconcept class
+public abstract class Abstractconcept { // extended by Abstracttest class
 	
 	int y =12; static int m;
 	static final int z=9;

@@ -34,6 +34,21 @@ public class ImpCaseconversion {
 		}
 		
 		System.out.println(sb.toString()); // output: PrAsAnTh
+		
+		System.out.println();
+		
+		
+		String strinput1 = "pRaSaNtH";
+		
+		char[] c1 = strinput1.toCharArray();
+		StringBuffer sb2 = new StringBuffer();
+		
+		for (char ch1:c1) {
+			
+			sb2 =	(ch1 >='a' && ch1 <= 'z') ? sb2.append(Character.toUpperCase(ch1)) : sb2.append(Character.toLowerCase(ch1));
+		}
+		
+		System.out.println(sb2.toString());//PrAsAnTh
 
 	}
 

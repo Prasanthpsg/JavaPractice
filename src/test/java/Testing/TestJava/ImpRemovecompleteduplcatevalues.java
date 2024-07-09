@@ -1,6 +1,7 @@
 package Testing.TestJava;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -42,13 +43,14 @@ public class ImpRemovecompleteduplcatevalues {
 		System.out.println(sb.toString().trim()); //jack and lazy
 		
 		String str2 = "the jack is dog and the dog is lazy";
-		List<String> strlist2 = new ArrayList<String>();
-		
 		String[] strarr2 = str2.split(" ");
+		List<String> strlist2 = new ArrayList<String>(Arrays.asList(strarr2));
 		
-		for(String s: strarr2) {
-			strlist2.add(s);
-		}
+		
+//		
+//		for(String s: strarr2) {
+//			strlist2.add(s);
+//		}
 		
 		List<String> s1=strlist2.stream().distinct().collect(Collectors.toList()); //[the, jack, is, dog, and, lazy]
 		
