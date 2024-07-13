@@ -5,7 +5,7 @@ public class ImpLeapyear {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int year = 1700;
+		int year = 2000;
 		
 		boolean isleapyear = false;
 		
@@ -26,6 +26,7 @@ public class ImpLeapyear {
 		else {
 			
 			if(year%4==0) {
+				System.out.println("in else block");
 			isleapyear = true;
 			}else {
 				isleapyear = false;

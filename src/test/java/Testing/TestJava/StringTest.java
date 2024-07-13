@@ -16,7 +16,7 @@ public class StringTest {
 		
 		String s5="Hello";
 		String s6= "world"; //string literal - will be available in string constant pool
-		String s7 = s5.concat(s6); // new sting, it will be stored in the heap memory
+		String s7 = s5.concat(s6); // new string, it will be stored in the heap memory
 		//s3.intern();
 		String s8="Helloworld";
 		System.out.println(s7==s8); //false

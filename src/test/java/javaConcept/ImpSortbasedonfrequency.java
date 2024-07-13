@@ -44,7 +44,7 @@ public class ImpSortbasedonfrequency {
 		List<Character> list1 = new ArrayList<Character>(hmap.keySet());
 		
 		// descending based on the value/frequency -important line
-		Collections.sort(list1, (a,b) -> hmap.get(b) - hmap.get(a)); // o/p: [b, a, A, c]
+		Collections.sort(list1, (a,b) -> hmap.get(b).compareTo(hmap.get(a))); // o/p: [b, a, A, c]
 		
 		//Collections.sort(list1, (a, b) -> b.compareTo(a)); //// Sort the character in descending order -> this is incorrect output -> [c, b, a, A] ->will sort based on character ASCII value
 		

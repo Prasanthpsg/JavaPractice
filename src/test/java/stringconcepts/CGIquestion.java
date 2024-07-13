@@ -14,6 +14,7 @@ public class CGIquestion {
 		StringBuilder sb = new StringBuilder(); boolean b =true;
 		
 		for(int i=0;i<str.length;i++) {
+			b =true;
 			
 			for(int j=i+1;j<str.length;j++) {
 				if(str[i].equals(str[j])) {

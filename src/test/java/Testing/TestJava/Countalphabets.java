@@ -8,7 +8,7 @@ public class Countalphabets {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String strinput  ="Prasanthertibfeo"; //accenture interview
+		String strinput  ="Prasanthertibfeo"; //accenture/UST interview
 		
 		char[] c = strinput.toLowerCase().toCharArray();
 		

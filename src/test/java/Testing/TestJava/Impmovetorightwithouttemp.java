@@ -16,6 +16,10 @@ public class Impmovetorightwithouttemp {
 			 arr[k++] = arr[i];
 		 }
 		 
+		 System.out.println(Arrays.toString(arr));
+		 
+		 System.out.println("len: "+arr.length);
+		 
 		 
 		 while (k < arr.length) {
 	            arr[k++] = 0;

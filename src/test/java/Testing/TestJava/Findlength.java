@@ -30,9 +30,16 @@ public class Findlength {
 		int i;
 		
 		for( i=1;i<6;i++) {
-			if(i>3) continue;
+			if(i>3) {continue;}
 		}
 		System.out.println(i); //6
+		
+		int z;
+		
+		for( z=1;z<6;z++) {
+			if(z>3) break;
+		}
+		System.out.println(z); //4
 		
 		
 		String str = "Helow";
