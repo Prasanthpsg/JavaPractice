@@ -12,6 +12,8 @@ public class ImpSecondmostfrequentchar {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		// Publicis sapient and pwc question
+		
 		String s = "prjasanthvijaya"; 
 		int lastposvalue=0;
 		
@@ -71,6 +73,9 @@ public class ImpSecondmostfrequentchar {
 		
 		//Second most frequent char
 		System.out.println(m.get(1).getKey());
+		
+		m.remove(1);
+		System.out.println("After remove - map: "+m);
 		
 		
 	}
