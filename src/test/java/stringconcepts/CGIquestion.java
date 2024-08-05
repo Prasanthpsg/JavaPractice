@@ -49,6 +49,8 @@ public class CGIquestion {
 		for(String x: set) {
 			System.out.print(x.concat(" "));
 		}
+		
+		
 	}
 
 }

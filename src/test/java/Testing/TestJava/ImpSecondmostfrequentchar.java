@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -64,18 +65,22 @@ public class ImpSecondmostfrequentchar {
 //			}
 //		}
 		
-		List<Map.Entry<Character, Integer> > m = new ArrayList<Map.Entry<Character,Integer>>(hmap.entrySet());
+		List<Map.Entry<Character, Integer> > m = new LinkedList<Map.Entry<Character,Integer>>(hmap.entrySet());
 		Collections.sort(m, (a, b) -> b.getValue().compareTo(a.getValue())); //// Sort the entry sets in descending order
 		
 		
 		//After sorting
-		System.out.println("After sorting - map: "+m);
+		System.out.println("After sorting - list: "+m);
 		
 		//Second most frequent char
 		System.out.println(m.get(1).getKey());
 		
 		m.remove(1);
-		System.out.println("After remove - map: "+m);
+		System.out.println("After remove - list: "+m);
+		
+		for(int x=0;x<m.size();x++) {
+			System.out.print(m.get(x).getKey());
+		}
 		
 		
 	}
