@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Findlength {
 
+	private  boolean numlock =true;
+  	 static boolean caplock = false;
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -46,14 +49,15 @@ public class Findlength {
 		System.out.println(str.indexOf('H')); //-1
 		
 		
-		String s7 = "Automation testing";
-		String s8 = new String ("Automation testing");
+		String s7 = "Automation testing"; //scp
+		String s8 = new String ("Automation testing"); //heap memory -> allows duplicate
 		
 		System.out.println(s7==s8); //false
 		
 		System.out.println(s7.equals(s8)); //true
 		
-		
+		// check global variable for this code
+		 System.out.println(numlock+ " "+caplock); // does not compile because numlock is not declared as static
 		
 	}
 
