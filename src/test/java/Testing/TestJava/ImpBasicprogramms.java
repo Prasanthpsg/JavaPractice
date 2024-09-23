@@ -59,6 +59,12 @@ public class ImpBasicprogramms {
 		}
 		
 		System.out.println(sbf.toString().trim()); //esrever hcae drow ni a gnirts
+
+		//map functional interface
+		//   Integer arr[] = {2,6,1,99,23,12};
+    String[] arr = {"xchris","test","bannana","zsds"};
+       List<String> h = new ArrayList<>(Arrays.asList(arr));
+      h.stream().sorted().map(String::toUpperCase).forEach(System.out::println); //make uppercase and print
 		
 	}
 
