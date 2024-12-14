@@ -91,7 +91,7 @@ public class Check {
             }
 
             sb2.append(sb).append(sb1);
-            sb.delete(0, sb.length());
+            sb.delete(0, sb.length()); // sb.setLength(0);
             sb1.delete(0, sb1.length());
         }
 
