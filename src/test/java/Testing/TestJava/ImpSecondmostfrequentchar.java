@@ -25,7 +25,7 @@ public class ImpSecondmostfrequentchar {
 		for(char c1: c) {
 			
 			if(hmap.containsKey(c1)) {
-				hmap.put(c1, hmap.get(c1)+1);
+				hmap.put(c1, hmap.get(c1)+1); // hmap.put(c1, hmap.getOrDefault(c1, 0)+1);
 			}else {
 				hmap.put(c1, 1);
 			}
